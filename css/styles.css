@@ -1,17 +1,25 @@
 header,
+nav,
 main,
-footer {
+footer,
+aside {
 	border: 2px solid #e91b1b;
 }
 
 .grid-container {
 	display: grid;
-	grid-template-columns: repeat(1fr, 4);
-	grid-template-areas: "header header header header" "nav nav nav nav" "sidebar main main sidebar" "footer footer footer footer";
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: auto auto auto auto;
+	grid-template-areas:
+		"header header header header"
+		"left-sidebar main main right-sidebar"
+		"footer footer footer footer";
+	gap: 20px;
 }
 
 /* Header section */
 header {
+	grid-area: header;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -45,13 +53,27 @@ nav ul {
 	text-shadow: 2px 2px #fff;
 }
 
+/* Sidebars */
+.left-sidebar {
+	grid-area: left-sidebar;
+	padding: 20px;
+}
+
+.right-sidebar {
+	grid-area: right-sidebar;
+	padding: 20px;
+}
+
 /* Main section */
 main {
-	display: grid;
+	grid-area: main;
+	display: flex;
+	justify-content: space-between;
 }
 
 /* Footer section */
 footer {
+	grid-area: footer;
 	display: flex;
 }
 
