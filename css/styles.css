@@ -7,11 +7,7 @@ footer {
 .grid-container {
 	display: grid;
 	grid-template-columns: repeat(1fr, 4);
-	grid-template-areas:
-		"header header header header"
-		"nav nav nav nav"
-		"sidebar main main sidebar"
-		"footer footer footer footer";
+	grid-template-areas: "header header header header" "nav nav nav nav" "sidebar main main sidebar" "footer footer footer footer";
 }
 
 /* Header section */
@@ -58,3 +54,5 @@ main {
 footer {
 	display: flex;
 }
+
+/*# sourceMappingURL=styles.css.map */
