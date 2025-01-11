@@ -1,11 +1,3 @@
-#navbar-logo {
-	animation: 1s ease-out 0s 1 fadeIn;
-}
-
-nav {
-	animation: 1s ease-out 0s 1 fadeIn;
-}
-
 @keyframes slideInFromLeft {
 	0% {
 		transform: translateX(-200%);
@@ -35,4 +27,32 @@ nav {
 	100% {
 		opacity: 1;
 	}
+}
+
+@keyframes fallInFade {
+	0% {
+		top: 50px;
+		opacity: 0;
+	}
+	100% {
+		top: 0;
+		opacity: 1;
+	}
+}
+
+/* #navbar-logo {
+	animation: 1s ease-out 0s 1 fadeIn;
+}
+
+nav {
+	animation: 1s ease-out 0s 1 fadeIn;
+} */
+
+#hero-logo-image {
+	animation: 1.5s ease-out 0s 1 fallInFade;
+}
+
+#hero-text {
+	opacity: 0;
+	animation: 1.5s ease-in-out 0.75s 1 fallInFade forwards;
 }

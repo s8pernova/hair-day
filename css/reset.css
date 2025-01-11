@@ -3,6 +3,10 @@
    License: none (public domain)
 */
 
+* {
+	border-radius: 0;
+}
+
 html,
 body,
 div,
