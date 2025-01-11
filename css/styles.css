@@ -10,13 +10,14 @@ article,
 :root {
 	--primary-color: #354bc7;
 	--secondary-color: #d0604c;
+	--gray: #f1f1f1;
 }
 
-.flex-container {
+/* .flex-container {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
-}
+} */
 
 .primary-font-style {
 	color: var(--secondary-color);
@@ -65,37 +66,67 @@ nav ul {
 }
 
 /* Main section */
-main {
-	display: flex;
-	flex-direction: column;
-}
 
 .main-container {
 	display: flex;
 	justify-content: space-between;
-	margin: 10px 50px;
+	margin: 10px 1%;
 	gap: 15px;
+}
+
+@media screen and (min-width: 720px) {
+	.main-container {
+		margin: 10px 5%;
+	}
+}
+
+@media screen and (min-width: 1080px) {
+	.main-container {
+		margin: 10px 10%;
+	}
 }
 
 .main-card {
 	display: flex;
 	flex-direction: column;
-	background-color: #f1f1f1;
+	background-color: var(--gray);
 	/* border-radius: 16px; */
-	padding: 1%;
 	margin: 1%;
 	text-align: center;
 	width: 100%;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+	transition: 0.25s;
 }
 
 .main-card-text {
 	font-style: italic;
+	padding: 15px 0;
+	color: #000;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 1em;
+	cursor: default;
 }
 
-/* .main-card-image {
-	width: 1vw;
-} */
+.main-card-image {
+	width: 100%;
+	height: 40vw;
+	object-fit: cover;
+}
+
+#cut-img {
+	width: 100%;
+	object-position: top;
+}
+
+#color-img {
+	width: 100%;
+	object-position: top 40%;
+}
+
+#styling-img {
+	width: 100%;
+	object-position: top 40%;
+}
 
 .hero-container {
 	display: flex;
@@ -122,15 +153,28 @@ main {
 
 #hero-logo-image {
 	width: 55vw;
-	filter: drop-shadow(2px 2px #fff);
+	/* filter: drop-shadow(2px 2px #fff); */
+	border: 7px double #fff;
+	padding: 10px;
+	background-color: rgba(0, 0, 0, 0.15);
 }
 
 /* Footer section */
 footer {
 	display: flex;
 	justify-content: space-between;
-	gap: 20px;
+	/* gap: 20px; */
 	align-items: center;
 	padding: 30px 50px;
-	background-color: #354bc7;
+	background-color: var(--gray);
+	border: 2px solid #e91b1b;
 }
+
+footer section {
+	border: 2px solid #e91b1b;
+	padding: 20px 10%;
+}
+
+/* .footer-container {
+	display: flex;
+} */
