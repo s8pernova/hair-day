@@ -1,4 +1,4 @@
-Time spent: **5** hours and **20** minutes
+Time spent: **6** hours and **22** minutes
 
 ## Required Features
 
