@@ -26,11 +26,8 @@ Based in Madison, Wisconsin, Hair Day is a boutique hair salon that specializes 
 
 Pria, the owner of Hair Day, earned her certificate as a colorist and immediately started specializing in edgy, custom coloring techniques. She wanted to create a "treat yourself" environment for her clients. Pria opened the salon with her good friend and talented hairdresser, Garry. They have a staff of seven: two stylists, three colorists, one manicurist and one make-up artist.
 
-<<<<<<< HEAD
 > [!TIP]
 > Use this website in half-screen view for the optimal experience. I did not make the website as responsive as I'd hoped-for due to time contraints.
-=======
->>>>>>> 09b09d7295b6bd2ddef32e6d13eb69c155e378bf
 
 > [!NOTE]
 > The images used in this project were taken from [Unsplash](https://unsplash.com/)
