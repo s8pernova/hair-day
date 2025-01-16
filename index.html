@@ -3,16 +3,92 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>Hair Day</title>
-		<meta name="author" content="Aidan Hoo" />
-		<meta name="description" content="The unofficial Hair Day website!" />
+		<meta name="author" content="" />
+		<meta name="description" content="The (unofficial) Hair Day website!" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<link href="style.css" rel="stylesheet" />
+		<link href="css/reset.css" rel="stylesheet" />
+		<link href="css/styles.css" rel="stylesheet" />
+		<link href="css/animations.css" rel="stylesheet" />
+		<link rel="icon" type="image/png" href="assets/Artboard 19.png" />
 	</head>
-
 	<body>
-		<p>Hello, world!</p>
-
-		<script src="js/script.js"></script>
+		<div class="flex-container">
+			<header>
+				<a href="/">
+					<img src="assets/Artboard 1.png" alt="Company Logo" width="65px" />
+				</a>
+				<nav>
+					<!-- These don't do anything right now. They just refresh the page -->
+					<ul class="nav-font-style">
+						<li><a href="/">Home</a></li>
+						<li><a href="/">About Us</a></li>
+						<li><a href="/">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+			<main>
+				<section class="hero-container" id="hero-background-image">
+					<img
+						src="assets/Artboard 22.png"
+						alt="Company Logo"
+						id="hero-logo-image"
+					/>
+					<h1 class="primary-font-style" id="hero-text">
+						Every Day is a good Hair Day
+					</h1>
+				</section>
+				<section class="main-container-block">
+					<h2>What is Hair Day?</h2>
+					<p>
+						Based in Madison, Wisconsin, Hair Day is a boutique hair salon that
+						specializes in cut, color and styling. Hair Day also offers makeup
+						and nail services, prides itself on its warm and relaxing atmosphere
+						and is best known for edgy hair colors and on-trend cuts.
+					</p>
+					<p>
+						Pria, the owner of Hair Day, earned her certificate as a colorist
+						and immediately started specializing in edgy, custom coloring
+						techniques. She wanted to create a "treat yourself" environment for
+						her clients. Pria opened the salon with her good friend and talented
+						hairdresser, Garry. They have a staff of seven: two stylists, three
+						colorists, one manicurist and one make-up artist.
+					</p>
+				</section>
+				<section class="main-container">
+					<article class="main-card">
+						<div class="main-card-text">— Cut —</div>
+						<img
+							src="assets/cut-img.jpg"
+							alt=""
+							class="main-card-image"
+							id="cut-img"
+						/>
+					</article>
+					<article class="main-card">
+						<div class="main-card-text">— Color —</div>
+						<img
+							src="assets/color-img.jpg"
+							alt=""
+							class="main-card-image"
+							id="color-img"
+						/>
+					</article>
+					<article class="main-card">
+						<div class="main-card-text">— Styling —</div>
+						<img
+							src="assets/styling-img.jpg"
+							alt=""
+							class="main-card-image"
+							id="styling-img"
+						/>
+					</article>
+				</section>
+			</main>
+			<footer>
+				<section>Copyright Hair Day 2025</section>
+				<section>This is a fake website.</section>
+			</footer>
+		</div>
 	</body>
 </html>
